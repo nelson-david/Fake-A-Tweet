@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000008" />
+  <meta
+    name="description"
+    content="Fake Tweet Created by David Nelson"
+  />
+
+  <title>Fake A Tweet - {%block title%}Home{%endblock title%}</title>
+  <meta name="apple-mobile-web-app-title" content="FKA Tweet">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="manifest" href="{{url_for('static', filename='manifest.json')}}">
+  <link rel="canonical" href="http://localhost:6677/">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/img/pwa_img/apple_icon.png">
+  <link rel="apple-touch-startup-image" href="/static/img/pwa_img/apple_launch.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  {% block header %}
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex align-items-center header__container">
+      <p class="logo mr-auto"><a href="{{url_for('home')}}">Fake Tweet</a></p>
+    </div>
+  </header>
+  <br>
+  <br>
+  {% endblock header %}
+
+  {% block container %}
+
+  <div class="container-fluid app__container">
+    <div class="row pt-5 app__row">
+
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7">
+        <h1 id="header__title" class="mb-0">Create Your Fake Tweets For Free</h1>
+
+        <div class="pt-4 pb-4">
+          <a href="{{url_for('create_tweet')}}" id="btn-get-started" class="mr-2">Get Started</a>
+          <button
+            id="btn-play-video"
+            class="ml-2"
+            data-toggle="modal"
+            data-target="#video__modal"
+            style="outline: none!important; border: none!important;"
+          >
+          Demo Video</button>
+        </div>
+
+        <p id="header__subtitle">Fake Tweet is a fully customizable fake tweet maker, with all kind of tweeter tweet features.</p>
+      </div>
+
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+        <img
+          src="/static/img/demo_images/demo6.png"
+          alt="mainHeadImg"
+        />
+      </div>
+
+      <div class="modal fade" id="video__modal" role="dialog" style="background-color: rgba(0, 0, 0, 0.65) !important">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content p-2" style="border-radius: 0px !important;">
+            <video src="/static/img/demo_images/review_video.webm" autoplay loop controls class="img-fluid w-100" style="-webkit-user-appearance: none !important; outline: none !important; border: none !important; box-shadow: none !important;"></video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+  {% endblock container %}
+
+
+  {% block footer %}
+
+    <footer class="custom__footer">
+      <div class="container-lg container-fluid pt-5 pb-3 footer__container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 order-3 order-md-0 footer__first__col ">
+            <p class="myname">David Nelson</p>
+            <span>Developer. Student. Writer</span>
+            <p style="color: #000013!important; font-size: 13px;">
+              © 2021 Made with ❤️ by David Nelson
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mb-md-0 splitted__footer__row">
+            <p class="mb-3 heading">Links</p>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="{{url_for('home')}}" class="text-dark">Home</a>
+              </li>
+              <li>
+                <a href="{{url_for('create_tweet')}}" class="text-dark">Create Tweet</a>
+              </li>
+  <!--             <li>
+                <a href="{{url_for('home')}}" class="text-dark">Feedback</a>
+              </li> -->
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mb-md-0 splitted__footer__row">
+            <p class="mb-3 heading">Follow Me</p>
+
+            <ul class="list-unstyled">
+              <li>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/nelson__david2/" class="text-dark">Instagram</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/nelson_david03" class="text-dark">Twitter</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noreferrer" href="https://github.com/nelson-david" class="text-dark">Github</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noreferrer" href="https://web.facebook.com/ogwu.nelson.david/" class="text-dark">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  {% endblock footer %}
+  
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator){
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('/sw.js').then(function(registration){
+        console.log('ServiceWorker registration was successful with scope: ', registration.scope);
+      }, function(err){
+        console.log('ServiceWorker registration failed: ', err)
+      })
+    })
+  }
+</script>
+
+</body>
+
+</html>

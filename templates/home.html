@@ -1,0 +1,178 @@
+{% extends 'index.html' %}
+
+{%block title%}Create{%endblock title%}
+
+{% block container %}
+<div class="container-fluid app__container home__page">
+	<div class="row pt-5 app__row">
+		<div class="col-xl-5 col-lg-5 col-md-6 col-sm-5" id="non__sub__col">
+			<div class="pt-3 tweet__all__data">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#home" class="nav-link active" data-toggle="tab">
+							Settings
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#menu1" class="nav-link" data-toggle="tab">
+							Customization
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#menu2" class="nav-link" data-toggle="tab">
+							Download
+						</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane container active" id="home">
+						<br>
+						<form>
+							<div class="form-group">
+								<label>Enter Name</label>
+								<input type="text" name="" placeholder="Enter Name" class="form-control tweet__input" id="user__name__data" value="David Nelson💻🎮">
+							</div>
+							<div class="form-group">
+								<label>Enter Username</label>
+								<input type="text" name="" placeholder="Enter Username" class="form-control tweet__input" id="user__handle__data" value="nelson_david22">
+							</div>
+							<div class="form-group">
+								<label>Select Profile Picture</label>
+								<input type="file" class="form-control tweet__input" id="tweet__user__image__data" accept="image/*">
+							</div>
+							<div class="form-group" id="tweet__post__image__data__div">
+								<label>Select Post Image</label>
+								<input type="file" class="form-control tweet__input" id="tweet__post__image__data" accept="image/*">
+							</div>
+							<div class="form-group" id="tweet__data__div">
+								<label>Enter Tweet Text</label>
+								<textarea placeholder="Enter Tweet" class="form-control tweet__input" id="tweet__data">It took only 5 hours for me to finish this awesome web application.</textarea>
+							</div>
+							<div class="form-group">
+								<label>Enter Tweet Device</label>
+								<input type="text" name="" placeholder="Enter Tweet Device" class="form-control tweet__input" id="tweet__device__data" value="iPhone">
+							</div>
+						</form>
+					</div>
+
+					<div class="tab-pane container fade" id="menu1">
+						<br>
+						<div class="form-check">
+							<label class="form-check-label tweet__check__buttons">
+								<input type="checkbox" class="form-check-input" value="false" id="remove__image">
+								Remove Image --
+							</label>
+						</div>
+						<br>
+						<div class="form-check">
+							<label class="form-check-label tweet__check__buttons">
+								<input type="checkbox" class="form-check-input" value="false" id="remove__text">
+								Remove Text --
+							</label>
+						</div>
+						<hr>
+						<div class="form-group">
+							<label>Select Background Color</label>
+							<input type="color" class="form-control tweet__input" id="tweet__color" value="#16202A">
+							<button id="set__default" type="button">Set Default</button>
+						</div>
+						<br>
+						<div class="form-group">
+							<label>Select Text Color</label>
+							<input type="color" class="form-control tweet__input" id="tweet__text__color" value="#ffffff">
+							<button id="set__text__default" type="button">Set Default</button>
+						</div>
+						<br>
+						<div class="form-group">
+							<label>Select Footer Text Color</label>
+							<input type="color" class="form-control tweet__input" id="tweet__footertext__color" value="darkgrey">
+							<button id="set__footertext__default" type="button">Set Default</button>
+						</div>
+						
+						<br>
+						<br>
+					</div>
+
+					<div class="tab-pane container fade" id="menu2">
+						<br>
+						<p>Note: Always click the <strong>Process Image</strong> Button after every change</p>
+						<p class="download__buttons">
+							<a href="" id="proccess__image__btn">
+								Process Image
+								<i id="spinner__auth" hidden>
+									<svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8c-0.020-1.045-0.247-2.086-0.665-3.038-0.417-0.953-1.023-1.817-1.766-2.53s-1.624-1.278-2.578-1.651c-0.953-0.374-1.978-0.552-2.991-0.531-1.013 0.020-2.021 0.24-2.943 0.646-0.923 0.405-1.758 0.992-2.449 1.712s-1.237 1.574-1.597 2.497c-0.361 0.923-0.533 1.914-0.512 2.895 0.020 0.981 0.234 1.955 0.627 2.847 0.392 0.892 0.961 1.7 1.658 2.368s1.523 1.195 2.416 1.543c0.892 0.348 1.851 0.514 2.799 0.493 0.949-0.020 1.89-0.227 2.751-0.608 0.862-0.379 1.642-0.929 2.287-1.604s1.154-1.472 1.488-2.335c0.204-0.523 0.342-1.069 0.415-1.622 0.019 0.001 0.039 0.002 0.059 0.002 0.552 0 1-0.448 1-1 0-0.028-0.001-0.056-0.004-0.083h0.004zM14.411 10.655c-0.367 0.831-0.898 1.584-1.55 2.206s-1.422 1.112-2.254 1.434c-0.832 0.323-1.723 0.476-2.608 0.454-0.884-0.020-1.759-0.215-2.56-0.57-0.801-0.354-1.526-0.867-2.125-1.495s-1.071-1.371-1.38-2.173c-0.31-0.801-0.457-1.66-0.435-2.512s0.208-1.694 0.551-2.464c0.342-0.77 0.836-1.468 1.441-2.044s1.321-1.029 2.092-1.326c0.771-0.298 1.596-0.438 2.416-0.416s1.629 0.202 2.368 0.532c0.74 0.329 1.41 0.805 1.963 1.387s0.988 1.27 1.272 2.011c0.285 0.74 0.418 1.532 0.397 2.32h0.004c-0.002 0.027-0.004 0.055-0.004 0.083 0 0.516 0.39 0.94 0.892 0.994-0.097 0.544-0.258 1.075-0.481 1.578z"></path></svg>
+								</i>
+							</a>
+						</p>
+						<br>
+						<div class="download__buttons__div">
+							<p><strong>Download: </strong> Download Options</p>
+							<a href="" id="download__png" download>PNG</a>
+						</div>
+						<br>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-xl-2 col-lg-1" id="numb__div"></div>
+		<div class="col-xl-5 col-lg-6 col-md-6 col-sm-7 pt-5 pb-5 unique__tweet__card" id="non__sub__col" style="background-color: transparent; !important;">
+				<div id="tweet__card" class="card tweet__card">
+
+					<div class="card-header">
+						<div class="tweet__title"><a href="javascript:void(0)" class="float-left" style="cursor: pointer;"><i>
+							<svg stroke="#ffffff" fill="#ffffff" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 010 .708L5.707 8l5.647 5.646a.5.5 0 01-.708.708l-6-6a.5.5 0 010-.708l6-6a.5.5 0 01.708 0z" clip-rule="evenodd"></path></svg>
+						</i></a> <p class="text-center" style="font-family: 'Poppins', sans-serif;">Tweet</p></div>
+					</div>
+
+					<div class="card-body pb-0">
+						<div class="row">
+							<div class="col-md-2 col-sm-2 col-2 pr-1" style="">
+								<div class="profile__img" style="background-image: url('/static/img/profile.png'); "></div>
+							</div>
+
+							<div class="col-md-8 col-sm-8 col-8 pl-1" style="" id="name__tags__div">
+								<p id="user__name"></p>
+								<i class="user__at__tag">@</i><span id="user__handle"></span>
+							</div>
+
+							<div class="col-md-2 col-sm-2 col-1">
+								<p class="text-right ellipsis__text"><i>
+									<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+								</i></p>
+							</div>
+						</div>
+						<div class="tweet__main__div pt-3">
+							<p id="tweet__data__text"></p>
+							<img
+								src="/static/img/static__img.jpg"
+								class="img-fluid tweet__img"
+								alt="tweetImg"
+							/>
+						</div>
+					</div>
+
+					<div class="card-footer">
+						<p class="time__stamps">
+							<span id="custom__date__time" hidden></span> <span id="default__date__time"></span> . <a href="javascript:void(0)" class="tweet__device" id="tweet__device"></a>
+						</p>
+						<hr style="margin-top: -10px; margin-bottom: 5px; background-color: darkgrey;">
+						<span class="tweet__activity">View Tweet activity</span>
+						<hr style="margin-top: 5px; margin-bottom: 5px; background-color: darkgrey;">
+					</div>
+
+				</div>
+		</div>
+	</div>
+</div>
+<br />
+<br />
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/html2canvas.js"></script>
+<script src="/static/js/scripts.js"></script>
+
+{% endblock container %}
