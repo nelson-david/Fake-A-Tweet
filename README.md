@@ -21,7 +21,7 @@ With a full glass color scheme (currently full glass color schemes are very bugg
 
 Python
 
-![Python](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/python.jpg)
+![Python](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/python.jpg)
 
 Flask
 
