@@ -18,5 +18,5 @@ def service_worker():
 def fav_icon():
 	return app.send_static_file('img/favicon.ico')
 
-# if __name__ == "__main__":
-# 	app.run(debug=True, port=6677, host='0.0.0.0')
+if __name__ == "__main__":
+	app.run(debug=True, port=6677, host='0.0.0.0')

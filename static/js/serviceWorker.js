@@ -3,9 +3,9 @@ console.log("GOT TO ME")
 let CACHE_NAME = 'faketweetcache';
 const urlsToCache = [
 	'/',
-	'/static/css/bootstrap.css',
-	'/static/css/styles.css',
-	'/static/js/bootstrap.js',
+	'/static/css/bootstrap.min.css',
+	'/static/css/styles.min.css',
+	'/static/js/bootstrap.min.js',
 	'/static/js/html2canvas.js',
 	'/static/js/scripts.js',
 	'/static/js/jquery.min.js',
