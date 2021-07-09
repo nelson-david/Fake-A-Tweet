@@ -2,6 +2,12 @@
 
 *Fake A Tweet (FKA Tweet)* is the real definition of small software solving big tasks. It helps you create Fake Tweets and also fully customizable.
 
+
+
+Live Demo:
+
+![Live Demo](https://fake-a-tweet.herokuapp.com/)
+
 ## Screenshots
 
 ![shots1](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/shots1.png)
