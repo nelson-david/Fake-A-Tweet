@@ -33,7 +33,7 @@ Bootstrap
 
 HTML2Canvas
 
-![HTML2Canvas](https://github.com/Luwx/Lightly/blob/master/config.png)
+![HTML2Canvas](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/h2c.jpeg)
 
 Javascript
 
