@@ -145,7 +145,7 @@ $(document).ready(function(){
 
 		window.scrollTo(0,0);
 
-		html2canvas($('#tweet__card'), {backgroundColor: null, x: 15}).then(canvas => {
+		html2canvas(document.getElementById("tweet__card"), {backgroundColor: null, x: 15}).then(canvas => {
 			//$("#append__canvas").append(canvas);
 			//$("#append__canvas canvas").attr("class", "pain__css")
 		    $("#download__png").attr("href", canvas.toDataURL());
