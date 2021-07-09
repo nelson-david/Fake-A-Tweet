@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  Little Video Review
+  Sample Video Review
 
-  <video src="bg.png">
+  <video src="https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/review_video.webm" autoplay>
   </video>
 
 </p>
@@ -25,11 +25,27 @@ With a full glass color scheme (currently full glass color schemes are very bugg
 
 ### Techs Used
 
+Python
+
 ![Python](https://github.com/Luwx/Lightly/blob/master/config.png)
+
+Flask
+
 ![Flask](https://github.com/Luwx/Lightly/blob/master/config.png)
+
+Bootstrap
+
 ![Bootstrap](https://github.com/Luwx/Lightly/blob/master/config.png)
+
+HTML2Canvas
+
 ![HTML2Canvas](https://github.com/Luwx/Lightly/blob/master/config.png)
+
+Javascript
+
 ![Javascript](https://github.com/Luwx/Lightly/blob/master/config.png)
+
+Jquery
 ![Jquery](https://github.com/Luwx/Lightly/blob/master/config.png)
 
 
