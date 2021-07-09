@@ -1,14 +1,8 @@
-<p align="center">
-  <img src="bg.png"/>
-</p>
 
-<p align="center">
   Sample Video Review
 
   <video src="https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/review_video.webm" autoplay>
   </video>
-
-</p>
 
 *Fake A Tweet (FKA Tweet)* is the real definition of small software solving big tasks. It helps you create Fake Tweets and also fully customizable.
 
@@ -27,15 +21,15 @@ With a full glass color scheme (currently full glass color schemes are very bugg
 
 Python
 
-![Python](https://github.com/Luwx/Lightly/blob/master/config.png)
+![Python](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/python.jpg)
 
 Flask
 
-![Flask](https://github.com/Luwx/Lightly/blob/master/config.png)
+![Flask](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/flask.png)
 
 Bootstrap
 
-![Bootstrap](https://github.com/Luwx/Lightly/blob/master/config.png)
+![Bootstrap](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/bootstrap.png)
 
 HTML2Canvas
 
@@ -43,17 +37,17 @@ HTML2Canvas
 
 Javascript
 
-![Javascript](https://github.com/Luwx/Lightly/blob/master/config.png)
+![Javascript](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/javascript.png)
 
 Jquery
-![Jquery](https://github.com/Luwx/Lightly/blob/master/config.png)
+![Jquery](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/jquery.jpg)
 
 
 ### Clone and Run
 
 ```
-git clone https://github.com/nelson-david/FakeTweet.git
-cd FakeTweet
+git clone https://github.com/nelson-david/Fake-A-Tweet.git
+cd Fake-A-Tweet
 pip install -r requirements.txt
 python3 app.py
 ```
