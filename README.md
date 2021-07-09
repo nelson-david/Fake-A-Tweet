@@ -1,7 +1,7 @@
 
   Sample Video Review
 
-  <video src="https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/review_video.webm" autoplay>
+  <video src="https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/review_video.webm" autoplay>
   </video>
 
 *Fake A Tweet (FKA Tweet)* is the real definition of small software solving big tasks. It helps you create Fake Tweets and also fully customizable.
@@ -25,11 +25,11 @@ Python
 
 Flask
 
-![Flask](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/flask.png)
+![Flask](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/flask.png)
 
 Bootstrap
 
-![Bootstrap](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/bootstrap.png)
+![Bootstrap](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/bootstrap.png)
 
 HTML2Canvas
 
@@ -37,10 +37,10 @@ HTML2Canvas
 
 Javascript
 
-![Javascript](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/javascript.png)
+![Javascript](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/javascript.png)
 
 Jquery
-![Jquery](https://github.com/nelson-david/Fake-A-Tweet/tree/main/static/img/demo_images/jquery.jpg)
+![Jquery](https://github.com/nelson-david/Fake-A-Tweet/blob/main/static/img/demo_images/jquery.jpg)
 
 
 ### Clone and Run
